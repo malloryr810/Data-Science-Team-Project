@@ -1,6 +1,7 @@
 # %%
 from pathlib import Path
 import pandas as pd
+import matplotlib.pyplot as plt
 
 project_root = Path(__file__).resolve().parents[1] if "__file__" in globals() else Path.cwd()
 relative_path = Path("data/raw/student_dropout/data.csv")
@@ -24,12 +25,24 @@ print(f"Binary dataset: {len(binary_students):,} rows")
 print(f"Missing cells: {binary_students.isna().sum().sum()}")
 print(f"Exact duplicate rows: {binary_students.duplicated().sum()}")
 
-class_counts = binary_students["Target"].value_counts()
+class_counts = binary_students["Target"].value_counts().reindex(["Graduate", "Dropout"], fill_value=0)
 class_summary = pd.DataFrame({
     "Count": class_counts,
     "Percent": (class_counts / len(binary_students) * 100).round(2),
 })
-print(class_summary.to_string())
+print("\nClass distribution:")
+print(class_summary.to_string(formatters={"Count": "{:,.0f}".format, "Percent": "{:.2f}%".format}))
+
+output_dir = data_path.parents[3] / "outputs"
+output_dir.mkdir(parents=True, exist_ok=True)
+fig, ax = plt.subplots()
+ax.bar(class_counts.index, class_counts.values)
+ax.set_title("Student outcomes: Graduate vs. Dropout")
+ax.set_xlabel("Class")
+ax.set_ylabel("Number of students")
+fig.tight_layout()
+fig.savefig(output_dir / "class_distribution.png", dpi=150)
+plt.close(fig)
 
 X = binary_students.drop(columns="Target")
 y = binary_students["Target"]

@@ -2,6 +2,7 @@
 from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 project_root = Path(__file__).resolve().parents[1] if "__file__" in globals() else Path.cwd()
 relative_path = Path("data/raw/student_dropout/data.csv")
@@ -46,3 +47,41 @@ plt.close(fig)
 
 X = binary_students.drop(columns="Target")
 y = binary_students["Target"]
+
+
+sem1_cols = [c for c in X.columns if "1st sem" in c.lower()]
+sem2_cols = [c for c in X.columns if "2nd sem" in c.lower()]
+
+print(f"\n1st Semester features ({len(sem1_cols)}): {sem1_cols}")
+print(f"2nd Semester features ({len(sem2_cols)}): {sem2_cols}")
+
+# both academic cols for correlation analysis
+academic_cols = sem1_cols + sem2_cols
+corr_matrix = X[academic_cols].corr()
+
+print("\nCorrelation matrix preview (Academic Variables):")
+print(corr_matrix.iloc[:5, :5].round(2).to_string())
+
+# heatmap
+fig, ax = plt.subplots(figsize=(10, 8))
+cax = ax.imshow(corr_matrix, cmap="coolwarm", vmin=-1, vmax=1)
+fig.colorbar(cax, label="Pearson Correlation")
+
+# ticks and labels
+ax.set_xticks(np.arange(len(academic_cols)))
+ax.set_yticks(np.arange(len(academic_cols)))
+ax.set_xticklabels(academic_cols, rotation=45, ha="right", fontsize=8)
+ax.set_yticklabels(academic_cols, fontsize=8)
+
+# cell annotations
+for i in range(len(academic_cols)):
+    for j in range(len(academic_cols)):
+        val = corr_matrix.iloc[i, j]
+        text_color = "white" if abs(val) > 0.5 else "black"
+        ax.text(j, i, f"{val:.2f}", ha="center", va="center", color=text_color, fontsize=8)
+
+ax.set_title("Correlation Heatmap: 1st vs. 2nd Semester Academic Variables")
+fig.tight_layout()
+fig.savefig(output_dir / "semester_correlation_heatmap.png", dpi=150)
+plt.close(fig)
+print(f"\nSaved correlation heatmap to: {output_dir / 'semester_correlation_heatmap.png'}")

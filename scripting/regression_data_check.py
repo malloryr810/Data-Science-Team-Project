@@ -41,3 +41,11 @@ excluded_columns = [
 X = regression_materials.drop(columns=excluded_columns)
 y = regression_materials[target]
 print(f"\nInitial predictor table: {X.shape[0]:,} rows, {X.shape[1]} columns")
+
+# %%
+missing_summary = pd.DataFrame({
+    "Missing count": X.isna().sum(),
+    "Missing percent": (X.isna().mean() * 100).round(2),
+}).sort_values("Missing count", ascending=False)
+print("\nMissing values in regression predictors:")
+print(missing_summary.to_string())

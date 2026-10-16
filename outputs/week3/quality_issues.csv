@@ -1,0 +1,11 @@
+dataset,raw_index,source_row,column,observed_value,finding,recommended_action,severity
+student,533,535,Curricular units 2nd sem (without evaluations),12,Exceeds enrolled count (6); source-dependent consistency screen,Investigate source definition; preserve raw row until resolved.,review
+student,1378,1380,Curricular units 2nd sem (without evaluations),7,Exceeds enrolled count (6); source-dependent consistency screen,Investigate source definition; preserve raw row until resolved.,review
+student,2931,2933,Curricular units 2nd sem (without evaluations),8,Exceeds enrolled count (5); source-dependent consistency screen,Investigate source definition; preserve raw row until resolved.,review
+tensile,55,58,Aspect Ratio (L/W),4.666666666666667,Observed ratio differs from dimensions: calculated 4.02299,Check reference article; neither ratio nor dimension is presumed correct.,review
+tensile,55,58,Aspect Ratio (R/W),1.0,Observed ratio differs from dimensions: calculated 0.862069,Check reference article; neither ratio nor dimension is presumed correct.,review
+tensile,55,58,Aspect Ratio (T/W),1.0,Observed ratio differs from dimensions: calculated 0.428161,Check reference article; neither ratio nor dimension is presumed correct.,review
+tensile,13,16,reported numeric composition sum,100.74,Known numeric components exceed 100.05 wt.%,Check source composition and units; blanks remain unknown.,review
+tensile,14,17,reported numeric composition sum,100.74,Known numeric components exceed 100.05 wt.%,Check source composition and units; blanks remain unknown.,review
+tensile,15,18,reported numeric composition sum,100.74,Known numeric components exceed 100.05 wt.%,Check source composition and units; blanks remain unknown.,review
+tensile,16,19,reported numeric composition sum,100.74,Known numeric components exceed 100.05 wt.%,Check source composition and units; blanks remain unknown.,review

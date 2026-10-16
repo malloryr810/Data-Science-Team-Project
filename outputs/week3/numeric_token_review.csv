@@ -1,0 +1,7 @@
+column,token,count,decision
+C (wt.%),<40 ppm,15,Preserve raw token; unit/range/limit/balance interpretation required before imputation.
+C (wt.%),150-400ppm,7,Preserve raw token; unit/range/limit/balance interpretation required before imputation.
+Fe (wt.%),<0.6,15,Preserve raw token; unit/range/limit/balance interpretation required before imputation.
+Zr (wt.%),bal,22,Preserve raw token; unit/range/limit/balance interpretation required before imputation.
+"O (wt.,%)",900-1400ppm,15,Preserve raw token; unit/range/limit/balance interpretation required before imputation.
+"O (wt.,%)",900-1200ppm,7,Preserve raw token; unit/range/limit/balance interpretation required before imputation.

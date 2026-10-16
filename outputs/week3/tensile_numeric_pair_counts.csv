@@ -1,0 +1,9 @@
+,Gauge Length (mm),Width (mm),Thickness (mm),Aspect Ratio (L/W),Aspect Ratio (T/W),Test Temperature (C),Strain Rate (1/s),Ultimate Tensile Strength (MPa)
+Gauge Length (mm),415,415,415,407,407,407,410,415
+Width (mm),415,426,426,407,407,418,421,426
+Thickness (mm),415,426,426,407,407,418,421,426
+Aspect Ratio (L/W),407,407,407,407,407,407,407,407
+Aspect Ratio (T/W),407,407,407,407,407,407,407,407
+Test Temperature (C),407,418,418,407,407,460,458,460
+Strain Rate (1/s),410,421,421,407,407,458,461,461
+Ultimate Tensile Strength (MPa),415,426,426,407,407,460,461,489

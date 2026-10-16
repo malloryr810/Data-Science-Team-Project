@@ -1,0 +1,114 @@
+{
+  "student_raw_rows": 4424,
+  "student_binary_rows": 3630,
+  "student_raw_columns": 37,
+  "student_missing_cells": 0,
+  "student_duplicates": 0,
+  "student_class_counts": {
+    "Graduate": 2209,
+    "Dropout": 1421
+  },
+  "student_unknown_counts": [
+    {
+      "column": "Mother's qualification",
+      "coded_unknown_count": 127
+    },
+    {
+      "column": "Father's qualification",
+      "coded_unknown_count": 109
+    },
+    {
+      "column": "Mother's occupation",
+      "coded_unknown_count": 15
+    },
+    {
+      "column": "Father's occupation",
+      "coded_unknown_count": 17
+    }
+  ],
+  "tensile_raw_rows": 1050,
+  "tensile_raw_columns": 55,
+  "uts_observed_rows": 489,
+  "uts_missing_rows": 561,
+  "tensile_duplicates": 0,
+  "uts_reference_count": 22,
+  "uts_tukey_flags": 17,
+  "geometry": [
+    {
+      "ratio": "Aspect Ratio (L/W)",
+      "observed_comparable": 407,
+      "missing_derivable": 8,
+      "conflicts_at_absolute_0_02": 1
+    },
+    {
+      "ratio": "Aspect Ratio (R/W)",
+      "observed_comparable": 144,
+      "missing_derivable": 17,
+      "conflicts_at_absolute_0_02": 1
+    },
+    {
+      "ratio": "Aspect Ratio (T/W)",
+      "observed_comparable": 407,
+      "missing_derivable": 19,
+      "conflicts_at_absolute_0_02": 1
+    }
+  ],
+  "issue_records": 10,
+  "student_high_correlation_pairs": [
+    {
+      "feature_a": "Curricular units 1st sem (credited)",
+      "feature_b": "Curricular units 2nd sem (credited)",
+      "pearson_r": 0.9470934915899273,
+      "paired_rows": 3630
+    },
+    {
+      "feature_a": "Curricular units 1st sem (enrolled)",
+      "feature_b": "Curricular units 2nd sem (enrolled)",
+      "pearson_r": 0.9412864966294326,
+      "paired_rows": 3630
+    },
+    {
+      "feature_a": "Curricular units 1st sem (approved)",
+      "feature_b": "Curricular units 2nd sem (approved)",
+      "pearson_r": 0.916333978491402,
+      "paired_rows": 3630
+    },
+    {
+      "feature_a": "Curricular units 1st sem (grade)",
+      "feature_b": "Curricular units 2nd sem (grade)",
+      "pearson_r": 0.8458637025340847,
+      "paired_rows": 3630
+    },
+    {
+      "feature_a": "Curricular units 1st sem (evaluations)",
+      "feature_b": "Curricular units 2nd sem (evaluations)",
+      "pearson_r": 0.7906158307754102,
+      "paired_rows": 3630
+    },
+    {
+      "feature_a": "Curricular units 2nd sem (approved)",
+      "feature_b": "Curricular units 2nd sem (grade)",
+      "pearson_r": 0.7868376275910449,
+      "paired_rows": 3630
+    },
+    {
+      "feature_a": "Curricular units 1st sem (credited)",
+      "feature_b": "Curricular units 1st sem (enrolled)",
+      "pearson_r": 0.7828630989223708,
+      "paired_rows": 3630
+    },
+    {
+      "feature_a": "Curricular units 1st sem (enrolled)",
+      "feature_b": "Curricular units 1st sem (approved)",
+      "pearson_r": 0.7735791213004373,
+      "paired_rows": 3630
+    }
+  ],
+  "source_sha256": {
+    "data.csv": "3ef126de5cefff26eb11fbb4237f1a1401cb64b488e2f1d598c23cedeb4c45ae",
+    "Tensile_Properties_of_Sub-sized_Specimens.xlsx": "9741f826f6a97db7c2c0efa89820d3bdae43e8beb53cafd893ccdf0bb74f64fa"
+  },
+  "transformations_applied": false,
+  "models_trained": false,
+  "exploratory_only": "Full-snapshot EDA informs hypotheses; no performance estimate or learned preprocessing is fitted."
+}

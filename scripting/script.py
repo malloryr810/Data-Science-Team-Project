@@ -56,25 +56,21 @@ sem2_cols = [c for c in X.columns if "2nd sem" in c.lower()]
 print(f"\n1st Semester features ({len(sem1_cols)}): {sem1_cols}")
 print(f"2nd Semester features ({len(sem2_cols)}): {sem2_cols}")
 
-# both academic cols for correlation analysis
 academic_cols = sem1_cols + sem2_cols
 corr_matrix = X[academic_cols].corr()
 
 print("\nCorrelation matrix preview (Academic Variables):")
 print(corr_matrix.iloc[:5, :5].round(2).to_string())
 
-# heatmap
 fig, ax = plt.subplots(figsize=(10, 8))
 cax = ax.imshow(corr_matrix, cmap="coolwarm", vmin=-1, vmax=1)
 fig.colorbar(cax, label="Pearson Correlation")
 
-# ticks and labels
 ax.set_xticks(np.arange(len(academic_cols)))
 ax.set_yticks(np.arange(len(academic_cols)))
 ax.set_xticklabels(academic_cols, rotation=45, ha="right", fontsize=8)
 ax.set_yticklabels(academic_cols, fontsize=8)
 
-# cell annotations
 for i in range(len(academic_cols)):
     for j in range(len(academic_cols)):
         val = corr_matrix.iloc[i, j]

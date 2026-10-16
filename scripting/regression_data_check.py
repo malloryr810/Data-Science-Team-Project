@@ -1,5 +1,4 @@
-# Run with: python scripting/regression_data_check.py
-# (requires pandas, openpyxl, matplotlib, and seaborn).
+# Run: python scripting/regression_data_check.py
 # %%
 from pathlib import Path
 import matplotlib.pyplot as plt
@@ -14,7 +13,7 @@ data_path = (
 
 with pd.ExcelFile(data_path) as workbook:
     print(f"Workbook sheets: {workbook.sheet_names}")
-    # The first row groups columns; the second row contains the actual names.
+    # Row 1 groups columns; row 2 has the names.
     materials = pd.read_excel(workbook, sheet_name="Tensile Data", header=1)
 
 materials.columns = materials.columns.str.strip()
@@ -26,14 +25,14 @@ print(f"Missing cells in original dataset: {materials.isna().sum().sum():,}")
 print(f"Exact duplicate rows in original dataset: {materials.duplicated().sum():,}")
 
 # %%
-# A missing target cannot be used for supervised regression; keep raw data intact.
+# Exclude missing targets; keep the raw data unchanged.
 regression_materials = materials.loc[materials[target].notna()].copy()
 print(f"Rows without UTS: {materials[target].isna().sum():,}")
 print(f"Rows with recorded UTS: {len(regression_materials):,}")
 print("\nUTS summary (MPa):")
 print(regression_materials[target].describe().round(2).to_string())
 
-# Other tensile outcomes leak experimental results. References are audit metadata.
+# Exclude same-test outcomes and reference IDs from predictors.
 excluded_columns = [
     target,
     "Yield Strength (MPa)",
@@ -54,7 +53,7 @@ print("\nMissing values in regression predictors:")
 print(missing_summary.to_string())
 
 # %%
-# Tukey's fences flag potential outliers for investigation; nothing is removed here.
+# Flag possible outliers for review; keep every value.
 q1 = y.quantile(0.25)
 q3 = y.quantile(0.75)
 iqr = q3 - q1
@@ -86,7 +85,6 @@ fig, (hist_ax, box_ax) = plt.subplots(
     2, 1, figsize=(9, 7), gridspec_kw={"height_ratios": [3, 1]}
 )
 sns.histplot(x=y, bins=30, ax=hist_ax)
-# Both fences fall inside the observed UTS range, so they fit without distorting the axis.
 for fence, name in [(lower_fence, "Lower fence"), (upper_fence, "Upper fence")]:
     hist_ax.axvline(fence, color="tab:red", linestyle="--")
     hist_ax.text(fence + 15, 0.97, f"{name}\n{fence:.0f} MPa", color="tab:red",

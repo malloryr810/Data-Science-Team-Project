@@ -1,0 +1,29 @@
+feature_a,feature_b,pearson_r,paired_rows
+Thickness (mm),Aspect Ratio (T/W),0.8011669061207123,407
+Gauge Length (mm),Width (mm),0.692796878288778,415
+Gauge Length (mm),Thickness (mm),0.6313386021366227,415
+Width (mm),Thickness (mm),0.5235801966675881,426
+Aspect Ratio (L/W),Test Temperature (C),0.4821037921602454,407
+Gauge Length (mm),Aspect Ratio (L/W),0.3688453401392714,407
+Gauge Length (mm),Aspect Ratio (T/W),0.31986879006227187,407
+Width (mm),Aspect Ratio (L/W),-0.31104500867778173,407
+Test Temperature (C),Ultimate Tensile Strength (MPa),-0.2829619566016828,460
+Width (mm),Test Temperature (C),-0.18797565008308945,418
+Aspect Ratio (T/W),Ultimate Tensile Strength (MPa),0.1858067133036345,407
+Gauge Length (mm),Ultimate Tensile Strength (MPa),-0.18493561554397975,415
+Width (mm),Ultimate Tensile Strength (MPa),-0.1625556316061315,426
+Aspect Ratio (L/W),Aspect Ratio (T/W),0.13760303914620506,407
+Aspect Ratio (T/W),Test Temperature (C),0.1342872506992995,407
+Aspect Ratio (L/W),Ultimate Tensile Strength (MPa),-0.12573605959038767,407
+Aspect Ratio (T/W),Strain Rate (1/s),0.10639154217144953,407
+Gauge Length (mm),Test Temperature (C),0.10553291422665721,407
+Thickness (mm),Strain Rate (1/s),0.08509465294071959,421
+Aspect Ratio (L/W),Strain Rate (1/s),-0.06781601051652507,407
+Width (mm),Aspect Ratio (T/W),0.06656151601717378,407
+Gauge Length (mm),Strain Rate (1/s),-0.04703423363360514,410
+Thickness (mm),Ultimate Tensile Strength (MPa),0.046999471901365046,426
+Thickness (mm),Test Temperature (C),-0.029273584472323633,418
+Thickness (mm),Aspect Ratio (L/W),-0.024837090355710266,407
+Width (mm),Strain Rate (1/s),0.024110517629617294,421
+Test Temperature (C),Strain Rate (1/s),-0.018343432688145596,458
+Strain Rate (1/s),Ultimate Tensile Strength (MPa),0.007095603343322182,461

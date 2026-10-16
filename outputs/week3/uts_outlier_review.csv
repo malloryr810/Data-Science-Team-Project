@@ -1,0 +1,18 @@
+raw_index,source_row,Reference,Material,Material Group,Test Temperature (C),Ultimate Tensile Strength (MPa)
+11,14,1,A-718,RPVS,23.0,1461.0
+12,15,1,A-718,RPVS,23.0,1386.0
+13,16,1,Aluminum 6061,"NSM, Support Structures",23.0,122.0
+14,17,1,Aluminum 6061,"NSM, Support Structures",23.0,119.0
+515,518,8,Experimental low-carbon steel ,"NSM, Support Structures",,1258.0
+516,519,8,Experimental low-carbon steel,"NSM, Support Structures",,1255.3
+530,533,9,Ti6Al4V,"NSM, Support Structures",23.0,1243.0
+532,535,9,Ti6Al4V,"NSM, Support Structures",23.0,1167.0
+533,536,9,Ti6Al4V,"NSM, Support Structures",23.0,1172.0
+534,537,9,Ti6Al4V,"NSM, Support Structures",23.0,1270.0
+535,538,9,Ti6Al4V,"NSM, Support Structures",23.0,1143.0
+536,539,9,Ti6Al4V,"NSM, Support Structures",23.0,1230.0
+619,622,14,CP Al (Al - 99.6 wt.%),"NSM, Support Structures",,66.0151562238531
+620,623,14,CP Al (Al - 99.6 wt.%),"NSM, Support Structures",,68.3880375797853
+621,624,14,CP Al (Al - 99.6 wt.%),"NSM, Support Structures",,73.6422748679209
+1011,1014,23,SS316L,SS316,-196.0,1403.0
+1018,1021,23,SS316L,SS316,-196.0,1235.0

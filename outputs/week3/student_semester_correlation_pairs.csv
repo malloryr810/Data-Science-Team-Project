@@ -1,0 +1,67 @@
+feature_a,feature_b,pearson_r,paired_rows
+Curricular units 1st sem (credited),Curricular units 2nd sem (credited),0.9470934915899273,3630
+Curricular units 1st sem (enrolled),Curricular units 2nd sem (enrolled),0.9412864966294326,3630
+Curricular units 1st sem (approved),Curricular units 2nd sem (approved),0.916333978491402,3630
+Curricular units 1st sem (grade),Curricular units 2nd sem (grade),0.8458637025340847,3630
+Curricular units 1st sem (evaluations),Curricular units 2nd sem (evaluations),0.7906158307754102,3630
+Curricular units 2nd sem (approved),Curricular units 2nd sem (grade),0.7868376275910449,3630
+Curricular units 1st sem (credited),Curricular units 1st sem (enrolled),0.7828630989223708,3630
+Curricular units 1st sem (enrolled),Curricular units 1st sem (approved),0.7735791213004373,3630
+Curricular units 1st sem (enrolled),Curricular units 2nd sem (credited),0.7632761218093531,3630
+Curricular units 1st sem (approved),Curricular units 2nd sem (enrolled),0.7373747998128276,3630
+Curricular units 1st sem (approved),Curricular units 1st sem (grade),0.7101565018864168,3630
+Curricular units 1st sem (approved),Curricular units 2nd sem (grade),0.7093678199762505,3630
+Curricular units 2nd sem (enrolled),Curricular units 2nd sem (approved),0.7044445310875679,3630
+Curricular units 1st sem (enrolled),Curricular units 1st sem (evaluations),0.6977228049479589,3630
+Curricular units 1st sem (grade),Curricular units 2nd sem (approved),0.6919069581210445,3630
+Curricular units 2nd sem (credited),Curricular units 2nd sem (enrolled),0.6830861448432981,3630
+Curricular units 1st sem (enrolled),Curricular units 2nd sem (approved),0.6748797751888376,3630
+Curricular units 1st sem (credited),Curricular units 2nd sem (enrolled),0.6507074483823189,3630
+Curricular units 1st sem (credited),Curricular units 1st sem (approved),0.6360712141625643,3630
+Curricular units 1st sem (evaluations),Curricular units 2nd sem (enrolled),0.6259670304033288,3630
+Curricular units 2nd sem (enrolled),Curricular units 2nd sem (evaluations),0.6250802338454113,3630
+Curricular units 1st sem (enrolled),Curricular units 2nd sem (evaluations),0.6185061708921117,3630
+Curricular units 1st sem (approved),Curricular units 2nd sem (credited),0.6158337741713006,3630
+Curricular units 1st sem (without evaluations),Curricular units 2nd sem (without evaluations),0.601572509219707,3630
+Curricular units 1st sem (approved),Curricular units 2nd sem (evaluations),0.5790888555977072,3630
+Curricular units 1st sem (credited),Curricular units 1st sem (evaluations),0.5691778726275823,3630
+Curricular units 1st sem (evaluations),Curricular units 1st sem (approved),0.5599687430451183,3630
+Curricular units 1st sem (evaluations),Curricular units 2nd sem (credited),0.5469798767749288,3630
+Curricular units 2nd sem (credited),Curricular units 2nd sem (approved),0.5226844045545717,3630
+Curricular units 2nd sem (evaluations),Curricular units 2nd sem (approved),0.5089678453735466,3630
+Curricular units 1st sem (grade),Curricular units 2nd sem (evaluations),0.5033649528308785,3630
+Curricular units 1st sem (credited),Curricular units 2nd sem (approved),0.4957623482409038,3630
+Curricular units 1st sem (evaluations),Curricular units 2nd sem (approved),0.46674379197213467,3630
+Curricular units 2nd sem (evaluations),Curricular units 2nd sem (grade),0.4631939607117849,3630
+Curricular units 2nd sem (credited),Curricular units 2nd sem (evaluations),0.45371629350177833,3630
+Curricular units 1st sem (credited),Curricular units 2nd sem (evaluations),0.4481363419899509,3630
+Curricular units 1st sem (evaluations),Curricular units 1st sem (grade),0.4250389567005988,3630
+Curricular units 1st sem (grade),Curricular units 2nd sem (enrolled),0.40708429857740935,3630
+Curricular units 2nd sem (enrolled),Curricular units 2nd sem (grade),0.4007727228327557,3630
+Curricular units 1st sem (enrolled),Curricular units 1st sem (grade),0.37644183259560765,3630
+Curricular units 1st sem (enrolled),Curricular units 2nd sem (grade),0.36601517031729425,3630
+Curricular units 1st sem (evaluations),Curricular units 2nd sem (grade),0.3535497436905663,3630
+Curricular units 1st sem (evaluations),Curricular units 1st sem (without evaluations),0.26738333849149026,3630
+Curricular units 1st sem (without evaluations),Curricular units 2nd sem (evaluations),0.17000363193812335,3630
+Curricular units 2nd sem (evaluations),Curricular units 2nd sem (without evaluations),0.16644258430091655,3630
+Curricular units 1st sem (evaluations),Curricular units 2nd sem (without evaluations),0.1583991959731262,3630
+Curricular units 1st sem (enrolled),Curricular units 1st sem (without evaluations),0.14664099863237634,3630
+Curricular units 1st sem (without evaluations),Curricular units 2nd sem (credited),0.14437790182768862,3630
+Curricular units 1st sem (credited),Curricular units 1st sem (without evaluations),0.14381141375787984,3630
+Curricular units 1st sem (credited),Curricular units 2nd sem (grade),0.14234349370670613,3630
+Curricular units 2nd sem (credited),Curricular units 2nd sem (grade),0.14018057454903649,3630
+Curricular units 1st sem (credited),Curricular units 1st sem (grade),0.12889351131416024,3630
+Curricular units 1st sem (without evaluations),Curricular units 2nd sem (enrolled),0.12358827988901185,3630
+Curricular units 1st sem (grade),Curricular units 2nd sem (credited),0.1201992118698046,3630
+Curricular units 2nd sem (credited),Curricular units 2nd sem (without evaluations),0.08450603867534061,3630
+Curricular units 2nd sem (grade),Curricular units 2nd sem (without evaluations),-0.07950807047569133,3630
+Curricular units 1st sem (enrolled),Curricular units 2nd sem (without evaluations),0.07567705465536337,3630
+Curricular units 2nd sem (enrolled),Curricular units 2nd sem (without evaluations),0.07036332117313365,3630
+Curricular units 1st sem (credited),Curricular units 2nd sem (without evaluations),0.06900109116370094,3630
+Curricular units 1st sem (without evaluations),Curricular units 2nd sem (grade),-0.0687246358467622,3630
+Curricular units 1st sem (grade),Curricular units 1st sem (without evaluations),-0.06417140652730226,3630
+Curricular units 1st sem (grade),Curricular units 2nd sem (without evaluations),-0.05586108355041531,3630
+Curricular units 2nd sem (approved),Curricular units 2nd sem (without evaluations),-0.052389243758219656,3630
+Curricular units 1st sem (approved),Curricular units 2nd sem (without evaluations),-0.0389737422206936,3630
+Curricular units 1st sem (approved),Curricular units 1st sem (without evaluations),0.013483895533158782,3630
+Curricular units 1st sem (without evaluations),Curricular units 2nd sem (approved),0.0014578510142815434,3630
